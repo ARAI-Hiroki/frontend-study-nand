@@ -1,26 +1,65 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer grid-display {
+  .cell {
+    @apply w-6 h-6 border border-slate-300 transition-colors duration-150;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* 通常状態 */
+  .vacant {
+    @apply bg-transparent;
+  }
+  .line {
+    @apply bg-slate-300;
+  }
+  .ignition {
+    @apply bg-red-500;
+  }
+  .circuit {
+    @apply bg-slate-700;
+  }
+  .upload-point {
+    @apply bg-yellow-400;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* 燃焼中(burning) */
+  .line.burning {
+    @apply bg-orange-400;
+  }
+  .circuit.burning {
+    @apply bg-red-800;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+@layer components {
+  /* --- モーダルアニメーション --- */
+  .dialog-fade-in {
+    animation: fadeIn 0.2s ease-out forwards;
+  }
+  .dialog-fade-out {
+    animation: fadeOut 0.2s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
 }
