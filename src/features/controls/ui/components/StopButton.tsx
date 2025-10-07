@@ -8,7 +8,7 @@ const StopButton: FC = () => {
   return (
     <button
       onClick={handleStop}
-      className="inline-flex items-center justify-center p-2 bg-red-500 text-white rounded-md shadow-sm hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 cursor-pointer transition-colors duration-200"
+      className="inline-flex cursor-pointer items-center justify-center rounded-md bg-red-500 p-2 text-white shadow-sm transition-colors duration-200 hover:bg-red-600 focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:outline-none"
       title="シミュレーションを停止"
     >
       <PauseIcon className="h-6 w-6" />

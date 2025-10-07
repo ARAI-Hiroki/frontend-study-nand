@@ -4,7 +4,7 @@ import { QuestionMarkCircleIcon, ArrowUpTrayIcon, ArrowDownTrayIcon } from '@her
 import { PlayIcon, ForwardIcon } from '@heroicons/react/24/solid'
 
 const HelpItem: FC<{ icon: ReactNode; children: ReactNode }> = ({ icon, children }) => (
-  <div className="flex items-center space-x-4 mb-3">
+  <div className="mb-3 flex items-center space-x-4">
     <div className="flex-shrink-0">{icon}</div>
     <p className="text-gray-600">{children}</p>
   </div>
@@ -30,7 +30,7 @@ const HintButton: FC = () => {
     <>
       <button
         onClick={openModal}
-        className="inline-flex items-center justify-center p-2 bg-yellow-500 text-white rounded-md shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 cursor-pointer transition-colors duration-200"
+        className="inline-flex cursor-pointer items-center justify-center rounded-md bg-yellow-500 p-2 text-white shadow-sm transition-colors duration-200 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:outline-none"
         title="操作方法を表示"
       >
         <QuestionMarkCircleIcon className="h-6 w-6" />
@@ -39,9 +39,9 @@ const HintButton: FC = () => {
       <dialog
         ref={dialogRef}
         onClose={() => setIsClosing(false)}
-        className={`m-auto p-6 bg-white rounded-xl shadow-lg max-w-xlg backdrop:bg-black backdrop:opacity-50 ${isClosing ? 'dialog-fade-out' : 'dialog-fade-in'}`}
+        className={`max-w-xlg m-auto rounded-xl bg-white p-6 shadow-lg backdrop:bg-black backdrop:opacity-50 ${isClosing ? 'dialog-fade-out' : 'dialog-fade-in'}`}
       >
-        <h2 className="text-xl font-bold mb-4">操作方法</h2>
+        <h2 className="mb-4 text-xl font-bold">操作方法</h2>
 
         <div className="space-y-4">
           <div className="space-y-4">
@@ -52,7 +52,7 @@ const HintButton: FC = () => {
               <HelpItem icon={<strong>Layer:</strong>}>アクティブなレイヤーを指定します</HelpItem>
             </div>
 
-            <p className="text-gray-700 pt-6">タイルをクリックするとタイルの種類を変更できます。</p>
+            <p className="pt-6 text-gray-700">タイルをクリックするとタイルの種類を変更できます。</p>
             <p className="text-gray-700">
               {' '}
               Ctrl + クリックするとタイルを削除できます（ Mac の場合は Command + クリック）
@@ -71,7 +71,7 @@ const HintButton: FC = () => {
               </HelpItem>
             </div>
 
-            <p className="text-gray-700 pt-6">コントロール部分にはいくつかのボタンがあります。</p>
+            <p className="pt-6 text-gray-700">コントロール部分にはいくつかのボタンがあります。</p>
 
             <div className="pl-2">
               <HelpItem icon={<PlayIcon className="h-6 w-6 text-gray-700" />}>
@@ -92,10 +92,10 @@ const HintButton: FC = () => {
             </div>
           </div>
 
-          <div className="text-right mt-6">
+          <div className="mt-6 text-right">
             <button
               onClick={closeModal}
-              className="px-4 py-2 bg-gray-300 text-black font-bold rounded-md hover:bg-gray-400 transition-colors duration-200"
+              className="rounded-md bg-gray-300 px-4 py-2 font-bold text-black transition-colors duration-200 hover:bg-gray-400"
             >
               閉じる
             </button>

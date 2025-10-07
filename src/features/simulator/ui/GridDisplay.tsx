@@ -35,7 +35,7 @@ const GridDisplay: FC = () => {
   const contentWidth = `${gridSize.x * (STYLE_CONSTANTS.TILE_SIZE + STYLE_CONSTANTS.TILE_BORDER * 2) + (gridSize.z > 0 ? (gridSize.z - 1) * STYLE_CONSTANTS.LAYER_OFFSET : 0)}px`
 
   return (
-    <div className="w-full max-w-7xl mx-auto overflow-x-auto overflow-y-hidden p-4">
+    <div className="mx-auto w-full max-w-7xl overflow-x-auto overflow-y-hidden p-4">
       <div id="main-table-wrapper" className="relative mx-auto" style={{ height: contentHeight, width: contentWidth }}>
         {gridData.map((layer, zIndex) => (
           <table

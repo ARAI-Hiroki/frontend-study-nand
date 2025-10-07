@@ -12,7 +12,7 @@ const Controls: FC = () => {
   const { handleReset, isRunning } = useGridSimulatorContext()
 
   return (
-    <div className="max-w-3xl mx-auto my-8 p-6 bg-white rounded-xl shadow-lg space-y-6">
+    <div className="mx-auto my-8 max-w-3xl space-y-6 rounded-xl bg-white p-6 shadow-lg">
       <BoardResizer />
 
       <hr />
@@ -23,7 +23,7 @@ const Controls: FC = () => {
           {isRunning ? <StopButton /> : <StartButton />}
           <button
             onClick={handleReset}
-            className="px-4 py-2 bg-gray-300 text-black font-bold rounded-md hover:bg-gray-400 transition-colors duration-200"
+            className="rounded-md bg-gray-300 px-4 py-2 font-bold text-black transition-colors duration-200 hover:bg-gray-400"
           >
             Reset
           </button>

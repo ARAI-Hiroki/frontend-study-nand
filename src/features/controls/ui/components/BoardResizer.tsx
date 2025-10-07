@@ -8,7 +8,7 @@ const BoardResizer: FC = () => {
     'w-20 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm'
 
   return (
-    <div className="bg-gray-50 p-4 rounded-lg border">
+    <div className="rounded-lg border bg-gray-50 p-4">
       <div className="flex items-center space-x-4">
         <div className="flex items-center space-x-2">
           <label htmlFor="board-x" className="font-medium text-gray-700">

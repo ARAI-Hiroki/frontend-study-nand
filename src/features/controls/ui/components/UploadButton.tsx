@@ -13,7 +13,7 @@ const UploadButton: FC = () => {
   return (
     <div className="flex flex-col items-start space-y-2">
       <label
-        className="relative inline-flex items-center justify-center p-2 bg-blue-500 text-white rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 cursor-pointer transition-colors duration-200"
+        className="relative inline-flex cursor-pointer items-center justify-center rounded-md bg-blue-500 p-2 text-white shadow-sm transition-colors duration-200 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none"
         title="ファイルをアップロード"
       >
         <ArrowUpTrayIcon className="h-6 w-6" />
