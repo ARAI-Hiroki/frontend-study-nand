@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @layer grid-display {
   .cell {
@@ -30,7 +30,6 @@
     @apply bg-red-800;
   }
 }
-
 
 @layer modal {
   .dialog-fade-in {

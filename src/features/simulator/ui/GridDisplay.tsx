@@ -1,51 +1,42 @@
-import { FC, MouseEvent } from 'react';
-import { useGridSimulatorContext } from '../../GridSimulatorContext';
-import { Cell } from '../../types';
-import { STYLE_CONSTANTS } from '../../constants';
+import { FC, MouseEvent } from 'react'
+import { useGridSimulatorContext } from '../../GridSimulatorContext'
+import { Cell } from '../../types'
+import { STYLE_CONSTANTS } from '../../constants'
 
 /**
  * セルオブジェクトからclass属性用の文字列を返す
  */
 const getClassNameFromCell = (cell: Cell): string => {
-  return (Object.keys(cell) as Array<keyof Cell>)
-    .filter(key => cell[key])
-    .join(' ');
-};
-
+  return (Object.keys(cell) as Array<keyof Cell>).filter((key) => cell[key]).join(' ')
+}
 
 /**
  * レイヤーの不透明度と操作可否を決定するCSSクラスを返す
  */
 const getLayerClasses = (zIndex: number, activeZ: number): string => {
-  const diff = Math.abs(zIndex - activeZ);
+  const diff = Math.abs(zIndex - activeZ)
   switch (diff) {
     case 0:
       // 選択中のレイヤー
-      return 'opacity-100';
+      return 'opacity-100'
     case 1:
       // 隣のレイヤー
-      return 'opacity-[.20] pointer-events-none';
+      return 'opacity-[.20] pointer-events-none'
     default:
       // 2つ以上離れたレイヤー
-      return 'opacity-[.10] pointer-events-none';
+      return 'opacity-[.10] pointer-events-none'
   }
-};
+}
 
 const GridDisplay: FC = () => {
-  const { gridData, activeZ, gridSize, handleTileClick } = useGridSimulatorContext();
+  const { gridData, activeZ, gridSize, handleTileClick } = useGridSimulatorContext()
 
-  const contentHeight = `${gridSize.y * (STYLE_CONSTANTS.TILE_SIZE + STYLE_CONSTANTS.TILE_BORDER * 2) + gridSize.z * STYLE_CONSTANTS.LAYER_OFFSET}px`;
-  const contentWidth = `${gridSize.x * (STYLE_CONSTANTS.TILE_SIZE + STYLE_CONSTANTS.TILE_BORDER * 2) + (gridSize.z > 0 ? (gridSize.z - 1) * STYLE_CONSTANTS.LAYER_OFFSET : 0)}px`;
+  const contentHeight = `${gridSize.y * (STYLE_CONSTANTS.TILE_SIZE + STYLE_CONSTANTS.TILE_BORDER * 2) + gridSize.z * STYLE_CONSTANTS.LAYER_OFFSET}px`
+  const contentWidth = `${gridSize.x * (STYLE_CONSTANTS.TILE_SIZE + STYLE_CONSTANTS.TILE_BORDER * 2) + (gridSize.z > 0 ? (gridSize.z - 1) * STYLE_CONSTANTS.LAYER_OFFSET : 0)}px`
 
   return (
-    <div
-      className="w-full max-w-7xl mx-auto overflow-x-auto overflow-y-hidden p-4"
-    >
-      <div
-        id="main-table-wrapper"
-        className="relative mx-auto"
-        style={{ height: contentHeight, width: contentWidth }}
-      >
+    <div className="w-full max-w-7xl mx-auto overflow-x-auto overflow-y-hidden p-4">
+      <div id="main-table-wrapper" className="relative mx-auto" style={{ height: contentHeight, width: contentWidth }}>
         {gridData.map((layer, zIndex) => (
           <table
             key={zIndex}
@@ -53,7 +44,7 @@ const GridDisplay: FC = () => {
             style={{
               top: `${STYLE_CONSTANTS.LAYER_OFFSET * zIndex}px`,
               left: `${STYLE_CONSTANTS.LAYER_OFFSET * zIndex}px`,
-              zIndex: gridSize.z - zIndex,
+              zIndex: gridSize.z - zIndex
             }}
           >
             <tbody>
@@ -63,7 +54,9 @@ const GridDisplay: FC = () => {
                     <td
                       key={xIndex}
                       className={`cell ${getClassNameFromCell(cell) || 'vacant'}`}
-                      onClick={(e: MouseEvent<HTMLTableCellElement>) => handleTileClick(zIndex, yIndex, xIndex, e.ctrlKey || e.metaKey)}
+                      onClick={(e: MouseEvent<HTMLTableCellElement>) =>
+                        handleTileClick(zIndex, yIndex, xIndex, e.ctrlKey || e.metaKey)
+                      }
                     />
                   ))}
                 </tr>
@@ -73,7 +66,7 @@ const GridDisplay: FC = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default GridDisplay;
+export default GridDisplay

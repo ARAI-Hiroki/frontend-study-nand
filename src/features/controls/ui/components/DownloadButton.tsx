@@ -1,10 +1,10 @@
-import { FC } from 'react';
+import { FC } from 'react'
 // 1. Heroiconsからダウンロード用のアイコンをインポート
-import { ArrowDownTrayIcon } from '@heroicons/react/24/solid';
-import { useGridSimulatorContext } from '@/features/GridSimulatorContext';
+import { ArrowDownTrayIcon } from '@heroicons/react/24/solid'
+import { useGridSimulatorContext } from '@/features/GridSimulatorContext'
 
 const DownloadButton: FC = () => {
-  const { handleDownload } = useGridSimulatorContext();
+  const { handleDownload } = useGridSimulatorContext()
 
   return (
     <button
@@ -14,7 +14,7 @@ const DownloadButton: FC = () => {
     >
       <ArrowDownTrayIcon className="h-6 w-6" />
     </button>
-  );
-};
+  )
+}
 
-export default DownloadButton;
+export default DownloadButton

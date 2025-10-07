@@ -1,9 +1,9 @@
-import { FC } from 'react';
-import { PlayIcon } from '@heroicons/react/24/solid';
-import { useGridSimulatorContext } from '@/features/GridSimulatorContext';
+import { FC } from 'react'
+import { PlayIcon } from '@heroicons/react/24/solid'
+import { useGridSimulatorContext } from '@/features/GridSimulatorContext'
 
 const StepButton: FC = () => {
-  const { handleStep } = useGridSimulatorContext();
+  const { handleStep } = useGridSimulatorContext()
 
   return (
     <button
@@ -13,7 +13,7 @@ const StepButton: FC = () => {
     >
       <PlayIcon className="h-6 w-6" />
     </button>
-  );
-};
+  )
+}
 
-export default StepButton;
+export default StepButton

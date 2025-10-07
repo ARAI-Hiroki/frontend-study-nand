@@ -1,14 +1,14 @@
-import { FC, ChangeEvent } from 'react';
-import { ArrowUpTrayIcon } from '@heroicons/react/24/outline';
-import { useGridSimulatorContext } from '@/features/GridSimulatorContext';
+import { FC, ChangeEvent } from 'react'
+import { ArrowUpTrayIcon } from '@heroicons/react/24/outline'
+import { useGridSimulatorContext } from '@/features/GridSimulatorContext'
 
 const UploadButton: FC = () => {
-  const { handleFileUpload } = useGridSimulatorContext();
+  const { handleFileUpload } = useGridSimulatorContext()
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    handleFileUpload(e);
-    e.target.value = '';
-  };
+    handleFileUpload(e)
+    e.target.value = ''
+  }
 
   return (
     <div className="flex flex-col items-start space-y-2">
@@ -18,15 +18,10 @@ const UploadButton: FC = () => {
       >
         <ArrowUpTrayIcon className="h-6 w-6" />
 
-        <input
-          type="file"
-          onChange={handleChange}
-          accept=".json"
-          className="hidden"
-        />
+        <input type="file" onChange={handleChange} accept=".json" className="hidden" />
       </label>
     </div>
-  );
-};
+  )
+}
 
-export default UploadButton;
+export default UploadButton

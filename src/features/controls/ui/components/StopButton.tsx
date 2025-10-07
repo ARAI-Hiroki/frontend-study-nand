@@ -1,9 +1,9 @@
-import { FC } from 'react';
-import { PauseIcon } from '@heroicons/react/24/solid';
-import { useGridSimulatorContext } from '@/features/GridSimulatorContext';
+import { FC } from 'react'
+import { PauseIcon } from '@heroicons/react/24/solid'
+import { useGridSimulatorContext } from '@/features/GridSimulatorContext'
 
 const StopButton: FC = () => {
-  const { handleStop } = useGridSimulatorContext();
+  const { handleStop } = useGridSimulatorContext()
 
   return (
     <button
@@ -13,7 +13,7 @@ const StopButton: FC = () => {
     >
       <PauseIcon className="h-6 w-6" />
     </button>
-  );
-};
+  )
+}
 
-export default StopButton;
+export default StopButton

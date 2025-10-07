@@ -21,19 +21,19 @@ export const TILE_STATUS = {
   VACANT: 'vacant',
 
   /** 燃焼中（信号が伝播している状態）。 */
-  BURNING: 'burning',
-} as const;
+  BURNING: 'burning'
+} as const
 
 export const TILE_STATUS_ORDER = [
   TILE_STATUS.LINE,
   TILE_STATUS.CIRCUIT,
   TILE_STATUS.IGNITION,
   TILE_STATUS.UPLOAD_POINT,
-  TILE_STATUS.VACANT,
-] as const;
+  TILE_STATUS.VACANT
+] as const
 
 export const STYLE_CONSTANTS = {
-  TILE_SIZE: 20, 
+  TILE_SIZE: 20,
   TILE_BORDER: 1, // px
-  LAYER_OFFSET: 3, // px
-} as const;
+  LAYER_OFFSET: 3 // px
+} as const
