@@ -12,6 +12,7 @@ export const updateTileState = (
   const newGridData: GridData = JSON.parse(JSON.stringify(gridData));
   const currentCell = newGridData[z][y][x] || {};
 
+  console.log('isCtrlPressed:', isCtrlPressed);
   if (isCtrlPressed) {
     // Ctrlキーが押されている場合は、セルを空の状態にする ({})
     newGridData[z][y][x] = {};

@@ -72,7 +72,7 @@ const HintButton: FC = () => {
                         </div>
 
                         <p className="text-gray-700 pt-6">タイルをクリックするとタイルの種類を変更できます。</p>
-
+                        <p className="text-gray-700"> Ctrl + クリックするとタイルを削除できます（ Mac の場合は Command + クリック）</p>
                         {/* タイルの説明 */}
                         <div className="pl-2">
                             <HelpItem icon={<div className="cell line" />}>

@@ -30,7 +30,102 @@
       },
       {},
       {},
+      {}
+    ],
+    [
       {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "line": true
+      },
+      {},
+      {
+        "line": true
+      },
+      {},
+      {},
+      {}
+    ],
+    [
+      {
+        "ignition": true
+      },
+      {
+        "line": true
+      },
+      {
+        "line": true
+      },
+      {
+        "line": true
+      },
+      {
+        "line": true
+      },
+      {
+        "line": true
+      },
+      {
+        "circuit": true
+      },
+      {
+        "line": true
+      },
+      {
+        "circuit": true
+      },
+      {},
+      {},
+      {}
+    ],
+    [
+      {},
+      {},
+      {},
+      {},
+      {
+        "line": true
+      },
+      {},
+      {
+        "line": true
+      },
+      {},
+      {
+        "line": true
+      },
+      {},
+      {},
+      {}
+    ],
+    [
+      {},
+      {},
+      {},
+      {},
+      {
+        "line": true
+      },
+      {
+        "line": true
+      },
+      {
+        "circuit": true
+      },
+      {
+        "line": true,
+        "ignition": false
+      },
+      {
+        "circuit": true
+      },
+      {
+        "line": true
+      },
       {
         "line": true
       },
@@ -45,13 +140,7 @@
       {},
       {},
       {},
-      {
-        "line": true
-      },
       {},
-      {
-        "line": true
-      },
       {},
       {},
       {},
@@ -59,211 +148,24 @@
       {}
     ],
     [
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "circuit": true
-      },
-      {
-        "line": true,
-        "ignition": false
-      },
-      {
-        "circuit": true
-      },
       {},
       {},
       {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "line": true
+      },
       {
         "line": true
       },
       {
         "line": true
       }
-    ],
-    [
-      {},
-      {},
-      {},
-      {},
-      {
-        "line": true
-      },
-      {},
-      {
-        "line": true,
-        "ignition": false
-      },
-      {},
-      {
-        "line": true
-      },
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    [
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {},
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "circuit": true
-      },
-      {
-        "line": true
-      },
-      {
-        "circuit": true
-      },
-      {
-        "line": true,
-        "ignition": false
-      },
-      {
-        "line": true
-      },
-      {},
-      {},
-      {}
-    ],
-    [
-      {},
-      {},
-      {
-        "line": true
-      },
-      {},
-      {},
-      {},
-      {},
-      {},
-      {
-        "line": true,
-        "ignition": false
-      },
-      {},
-      {
-        "line": true
-      },
-      {},
-      {},
-      {}
-    ],
-    [
-      {},
-      {},
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "circuit": true
-      },
-      {
-        "line": true
-      },
-      {
-        "circuit": true
-      },
-      {},
-      {},
-      {}
-    ],
-    [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {
-        "line": true
-      },
-      {},
-      {
-        "line": true
-      },
-      {},
-      {
-        "line": true
-      },
-      {},
-      {},
-      {}
-    ],
-    [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "circuit": true
-      },
-      {
-        "line": true,
-        "ignition": false
-      },
-      {
-        "circuit": true
-      },
-      {
-        "line": true
-      },
-      {},
-      {}
     ]
   ],
   [
@@ -279,15 +181,9 @@
       {},
       {},
       {},
-      {},
-      {
-        "line": true
-      },
       {}
     ],
     [
-      {},
-      {},
       {},
       {},
       {},
@@ -315,31 +211,9 @@
       {},
       {},
       {},
-      {},
-      {
-        "line": true
-      },
       {}
     ],
     [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    [
-      {},
-      {},
       {},
       {},
       {},
@@ -365,26 +239,6 @@
       {},
       {},
       {},
-      {},
-      {},
-      {}
-    ],
-    [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {
-        "line": true
-      },
-      {},
-      {},
-      {},
       {}
     ],
     [
@@ -399,13 +253,9 @@
       {},
       {},
       {},
-      {},
-      {},
       {}
     ],
     [
-      {},
-      {},
       {},
       {},
       {},
@@ -428,43 +278,19 @@
       {},
       {},
       {},
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
       {}
     ],
     [
       {},
       {},
       {},
-      {},
-      {
-        "line": true
-      },
       {},
       {},
       {},
@@ -480,52 +306,18 @@
       {},
       {},
       {},
-      {
-        "line": true
-      },
-      {},
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {},
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {}
-    ],
-    [
-      {},
       {},
       {},
       {},
       {
         "line": true
       },
-      {},
       {
         "line": true
       },
-      {},
       {
         "line": true
       },
-      {},
-      {
-        "line": true
-      },
-      {},
       {},
       {}
     ],
@@ -534,9 +326,26 @@
       {},
       {},
       {},
+      {},
+      {},
+      {},
       {
         "line": true
       },
+      {},
+      {
+        "line": true
+      },
+      {},
+      {}
+    ],
+    [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
       {},
       {
         "line": true
@@ -547,13 +356,6 @@
       {
         "circuit": true
       },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {},
       {},
       {}
     ],
@@ -562,18 +364,15 @@
       {},
       {},
       {},
-      {
-        "line": true
-      },
       {},
       {},
       {},
       {},
       {},
       {
-        "line": true
+        "line": true,
+        "ignition": false
       },
-      {},
       {},
       {}
     ],
@@ -582,67 +381,11 @@
       {},
       {},
       {},
-      {
-        "line": true
-      },
-      {},
-      {},
-      {},
-      {},
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {},
-      {},
-      {}
-    ],
-    [
-      {},
-      {},
-      {},
-      {},
-      {
-        "line": true
-      },
       {},
       {},
       {},
       {},
       {},
-      {},
-      {},
-      {},
-      {}
-    ],
-    [
-      {},
-      {},
-      {},
-      {},
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
-      {
-        "line": true
-      },
       {
         "line": true
       },

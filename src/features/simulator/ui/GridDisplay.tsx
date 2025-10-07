@@ -29,10 +29,10 @@ const getLayerClasses = (zIndex: number, activeZ: number): string => {
       return 'opacity-100';
     case 1:
       // 隣のレイヤー
-      return 'opacity-30 pointer-events-none';
+      return 'opacity-[.20] pointer-events-none';
     default:
       // 2つ以上離れたレイヤー
-      return 'opacity-[.15] pointer-events-none';
+      return 'opacity-[.10] pointer-events-none';
   }
 };
 
@@ -68,7 +68,7 @@ const GridDisplay: FC = () => {
                     <td
                       key={xIndex}
                       className={`cell ${getClassNameFromCell(cell) || 'vacant'}`}
-                      onClick={(e: MouseEvent<HTMLTableCellElement>) => handleTileClick(zIndex, yIndex, xIndex, e.ctrlKey)}
+                      onClick={(e: MouseEvent<HTMLTableCellElement>) => handleTileClick(zIndex, yIndex, xIndex, e.ctrlKey || e.metaKey)}
                     />
                   ))}
                 </tr>
