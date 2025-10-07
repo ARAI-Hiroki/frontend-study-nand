@@ -1,8 +1,8 @@
-import { GridData, GridSize } from '../../types';
+import { GridData } from '../../types';
 import { trim3DArray } from './fileDownloadUtils';
 
 /**
- * グリッドデータをJSONファイルとしてダウンロードします
+ * グリッドデータをJSONファイルとしてダウンロードする
  */
 export const downloadGridFile = (gridData: GridData): void => {
   const dataToSave = trim3DArray(gridData);

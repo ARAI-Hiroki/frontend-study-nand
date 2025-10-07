@@ -32,8 +32,7 @@
 }
 
 
-@layer components {
-  /* --- モーダルアニメーション --- */
+@layer modal {
   .dialog-fade-in {
     animation: fadeIn 0.2s ease-out forwards;
   }

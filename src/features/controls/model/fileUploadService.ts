@@ -1,7 +1,7 @@
 import { GridData, GridSize } from '../../types';
 
 /**
- * アップロードされたJSONファイルを読み込み、新しいグリッドデータを返します
+ * アップロードされたJSONファイルを読み込み、新しいグリッドデータを返す
  */
 export const loadGridFromFile = (
   file: File,
@@ -44,7 +44,6 @@ export const loadGridFromFile = (
 
               const loadedCell = loadedGrid[i][j][k];
 
-              // 文字列を解析してCellオブジェクトを生成
               if (typeof loadedCell === 'object' && loadedCell !== null) {
                   newGridData[z][y][x] = loadedCell;
               }

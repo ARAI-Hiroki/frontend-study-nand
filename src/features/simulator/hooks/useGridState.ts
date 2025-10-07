@@ -14,9 +14,9 @@ const createEmptyGrid = (size: GridSize): GridData => {
 export const useGridState = (initialGridSize: GridSize) => {
     const [gridSize, setGridSize] = useState<GridSize>(initialGridSize);
     const [gridData, setGridData] = useState<GridData>(() => {
-      const emptyGrid = createEmptyGrid(initialGridSize);
-      const position = { x: 5, y: 2, z: 0 };
-      return initializeGridWithData(emptyGrid, halfAdderData as GridData, position);
+        const emptyGrid = createEmptyGrid(initialGridSize);
+        const position = { x: 5, y: 2, z: 0 };
+        return initializeGridWithData(emptyGrid, halfAdderData as GridData, position);
     });
 
     const handleGridSizeChange = (axis: 'x' | 'y' | 'z', value: number) => {

@@ -1,4 +1,4 @@
-import { FC, ChangeEvent } from 'react';
+import { FC } from 'react';
 import { useGridSimulatorContext } from '@/features/GridSimulatorContext';
 
 const BoardResizer: FC = () => {
@@ -15,7 +15,6 @@ const BoardResizer: FC = () => {
     <div className="bg-gray-50 p-4 rounded-lg border">
       <div className="flex items-center space-x-4">
         
-        {/* --- Board Dimensions --- */}
         <div className="flex items-center space-x-2">
           <label htmlFor="board-x" className="font-medium text-gray-700">X:</label>
           <input
@@ -49,7 +48,6 @@ const BoardResizer: FC = () => {
           />
         </div>
         
-        {/* --- Active Layer Selector --- */}
         <div className="flex items-center space-x-2">
            <label htmlFor="active-layer" className="font-medium text-gray-700">Layer:</label>
            <select

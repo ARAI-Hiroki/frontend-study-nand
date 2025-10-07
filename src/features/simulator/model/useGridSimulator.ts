@@ -1,26 +1,12 @@
 "use client"; // フック内で 'use client' 境界内の機能を使うため
-import { useState, useEffect, ChangeEvent, useCallback } from 'react';
-import { GridSize, GridData, Cell } from '../../types';
+import { useState, useEffect, ChangeEvent } from 'react';
+import { GridSize } from '../../types';
 import { updateTileState } from './gridService'; // 追加
 import { useFileOperations } from '@/features/controls/hooks/useFileOperations';
 import { useGridState } from '../hooks/useGridState';
 import { useSimulation } from '../hooks/useSimulations';
 
-const SIMULATION_INTERVAL_MS = 100; // 0.1秒ごと。この数値を調整して速度を変更
 
-
-/**
- * 指定されたサイズの空のグリッドデータを生成するヘルパー関数
- */
-const createEmptyGrid = (size: GridSize): GridData => {
-  return Array.from({ length: size.z }, () =>
-    Array.from({ length: size.y }, () =>
-      Array.from({ length: size.x }, () => ({}))
-    )
-  );
-};
-
-// カスタムフックの定義
 export const useGridSimulator = (initialGridSize: GridSize) => {
 
 

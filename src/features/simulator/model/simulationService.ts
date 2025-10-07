@@ -1,12 +1,11 @@
-import { TILE_STATUS } from '../../constants'; // 定数をインポート
 
-import { Cell, Coordinate, GridData, GridSize } from '../../types'; // Cellをインポート
+import { Coordinate, GridData, GridSize } from '../../types';
 
 
 /**
  * 回路タイルを処理し、出力を更新したグリッドを返す
  */
-const processCircuits = (gridData: GridData, gridSize: GridSize): GridData => {
+const processCircuits = (gridData: GridData): GridData => {
     const newGridData: GridData = JSON.parse(JSON.stringify(gridData));
 
     for (let z = 0; z < gridData.length; z++) {
@@ -112,7 +111,7 @@ const processIgnitions = (gridData: GridData, gridSize: GridSize): GridData => {
  */
 export const runSimulationStep = (gridData: GridData, gridSize: GridSize): GridData => {
     // 1. circruitを処理する
-    let nextGridData = processCircuits(gridData, gridSize);
+    let nextGridData = processCircuits(gridData);
 
     // 2. 全てのburning状態を一旦リセットする
     nextGridData = resetAllBurningStates(nextGridData);

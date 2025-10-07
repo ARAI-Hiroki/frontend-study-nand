@@ -5,21 +5,16 @@ import { STYLE_CONSTANTS } from '../../constants';
 
 /**
  * セルオブジェクトからclass属性用の文字列を返す
- * @param cell 
- * @returns 
  */
 const getClassNameFromCell = (cell: Cell): string => {
-  return Object.entries(cell)
-    .filter(([_, value]) => value)
-    .map(([key]) => key)
+  return (Object.keys(cell) as Array<keyof Cell>)
+    .filter(key => cell[key])
     .join(' ');
 };
 
+
 /**
  * レイヤーの不透明度と操作可否を決定するCSSクラスを返す
- * @param zIndex - 現在のレイヤー番号
- * @param activeZ - 選択中のレイヤー番号
- * @returns Tailwind CSSのクラス文字列
  */
 const getLayerClasses = (zIndex: number, activeZ: number): string => {
   const diff = Math.abs(zIndex - activeZ);

@@ -1,10 +1,8 @@
 import { FC } from 'react';
-import { PlayIcon } from '@heroicons/react/24/solid';
 import { ForwardIcon } from '@heroicons/react/24/solid';
 import { useGridSimulatorContext } from '@/features/GridSimulatorContext';
 
 const StartButton: FC = () => {
-  // 2. 挙動はStepボタンと同じhandleStartを呼び出す
   const { handleStart } = useGridSimulatorContext();
 
   return (

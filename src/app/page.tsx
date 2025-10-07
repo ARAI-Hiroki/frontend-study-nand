@@ -5,7 +5,6 @@ import GridDisplay from '@/features/simulator/ui/GridDisplay';
 import { GridSimulatorProvider } from '@/features/GridSimulatorContext';
 import Header from './Header';
 
-// --- メインコンポーネント ---
 const HomePage: FC = () => {
 
     return (

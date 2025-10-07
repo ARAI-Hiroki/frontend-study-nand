@@ -1,6 +1,5 @@
 "use client";
 import { FC, ReactNode, useRef, useState } from 'react';
-// --- 1. 使用するアイコンをすべてインポート ---
 import {
     QuestionMarkCircleIcon,
     ArrowUpTrayIcon,
@@ -9,7 +8,6 @@ import {
 import { PlayIcon, ForwardIcon } from '@heroicons/react/24/solid';
 
 
-// --- 2. 説明の各行を表示するためのヘルパーコンポーネントを作成 ---
 const HelpItem: FC<{ icon: ReactNode; children: ReactNode }> = ({ icon, children }) => (
     <div className="flex items-center space-x-4 mb-3">
         <div className="flex-shrink-0">{icon}</div>
@@ -50,12 +48,10 @@ const HintButton: FC = () => {
             >
                 <h2 className="text-xl font-bold mb-4">操作方法</h2>
 
-                {/* --- 3. ここからがモーダルの内容 --- */}
                 <div className="space-y-4">
 
                     <div className="space-y-4">
 
-                        {/* ボードサイズ調整の説明 */}
                         <div className="pl-2">
                             <HelpItem icon={<strong>X:</strong>}>
                                 横幅を調整できます
@@ -73,7 +69,7 @@ const HintButton: FC = () => {
 
                         <p className="text-gray-700 pt-6">タイルをクリックするとタイルの種類を変更できます。</p>
                         <p className="text-gray-700"> Ctrl + クリックするとタイルを削除できます（ Mac の場合は Command + クリック）</p>
-                        {/* タイルの説明 */}
+
                         <div className="pl-2">
                             <HelpItem icon={<div className="cell line" />}>
                                 導線です。信号を伝えます。
@@ -91,7 +87,6 @@ const HintButton: FC = () => {
 
                         <p className="text-gray-700 pt-6">コントロール部分にはいくつかのボタンがあります。</p>
 
-                        {/* ボタンの説明 */}
                         <div className="pl-2">
                             <HelpItem icon={<PlayIcon className="h-6 w-6 text-gray-700" />}>
                                 シミュレーションを１ステップ進めます。
@@ -110,7 +105,6 @@ const HintButton: FC = () => {
                             </HelpItem>
                         </div>
                     </div>
-                    {/* --- ここまでがモーダルの内容 --- */}
 
                     <div className="text-right mt-6">
                         <button

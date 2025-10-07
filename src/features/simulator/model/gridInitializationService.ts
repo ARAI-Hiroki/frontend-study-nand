@@ -1,11 +1,7 @@
 import { GridData, Coordinate } from '../../types';
 
 /**
- * 指定されたグリッドデータに、別のグリッドデータを特定の位置からマージします。
- * @param baseGrid - 元になるグリッドデータ
- * @param dataToLoad - 読み込むグリッドデータ
- * @param position - 読み込みを開始する座標
- * @returns マージ後の新しいグリッドデータ
+ * 指定されたグリッドデータに、別のグリッドデータを特定の位置からマージする。
  */
 export const initializeGridWithData = (
   baseGrid: GridData,

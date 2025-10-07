@@ -16,7 +16,6 @@ const Controls: FC = () => {
   } = useGridSimulatorContext();
 
   return (
-   // --- ここからが追加・修正部分 ---
     <div className="max-w-3xl mx-auto my-8 p-6 bg-white rounded-xl shadow-lg space-y-6">
       
       <BoardResizer />
@@ -40,11 +39,9 @@ const Controls: FC = () => {
           <DownloadButton />
           <UploadButton />
           <HintButton />
-
         </div>
       </div>
     </div>
-    // --- ここまで ---
   );
 };
 

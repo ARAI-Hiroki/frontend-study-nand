@@ -1,5 +1,4 @@
 import { FC, ChangeEvent } from 'react';
-// useRefをインポートから削除
 import { ArrowUpTrayIcon } from '@heroicons/react/24/outline';
 import { useGridSimulatorContext } from '@/features/GridSimulatorContext';
 
