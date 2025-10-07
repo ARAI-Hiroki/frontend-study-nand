@@ -3,7 +3,7 @@ import { createContext, useContext, FC, ReactNode } from 'react'
 import { useGridSimulator } from '@/features/simulator/model/useGridSimulator'
 
 type GridSimulatorContextType = ReturnType<typeof useGridSimulator>
-const GridSimulatorContext = createContext<GridSimulatorContextType | undefined>(undefined)
+export const GridSimulatorContext = createContext<GridSimulatorContextType | undefined>(undefined)
 
 export const GridSimulatorProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const simulator = useGridSimulator({ x: 40, y: 15, z: 3 })
